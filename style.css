@@ -1,0 +1,58 @@
+/*一级标题*/
+#editor>h1{
+	margin-bottom: 18px;
+	font-size: 30px;
+	color: #404040;
+	line-height: 36px;
+	counter-reset: hone 0;
+}
+/*二级标题*/
+#editor>section>h1{
+	font-size: 24px;
+	color: #404040;
+	line-height: 36px;
+	counter-increment:hone;
+	counter-reset: htwo 0;
+}
+#editor>section>h1:before{
+	content: counter(hone)' ';
+}
+/*三级标题*/
+#editor>section>section>h1{
+	font-size: 18px;
+	color: #404040;
+	line-height: 36px;
+	counter-increment: htwo;
+}
+#editor>section>section>h1:before{
+	content: counter(hone)'.'counter(htwo);
+}	
+/*四级标题*/
+#editor>section>section>section>h1{
+	font-size: 16px;
+	color: #404040;
+	line-height: 36px;
+}
+/*五级标题*/
+#editor>section>section>section>section>h1{
+	font-size: 14px;
+	color: #404040;
+	line-height: 36px;
+}
+/*六级标题*/
+#editor>section>section>section>section>section>h1{
+	font-size: 13px;
+	color: #404040;
+	line-height: 36px;
+}
+/*正文样式*/
+p{
+	margin-bottom: 9px;
+}
+/*全局字体*/
+body{
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #737373;
+}
